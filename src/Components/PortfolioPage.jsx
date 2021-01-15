@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const PortfolioPage = () => {
   return (
     <div>
-      <Link to="/portfoliowebsite/">Go to Portfolio Page</Link>
+      <Link to="/">Go to Landing Page</Link>
     </div>
   );
 };
