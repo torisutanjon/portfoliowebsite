@@ -1,36 +1,62 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "./Styles/LandingPageStyles.css";
+
 const LandingPage = () => {
-  const [text] = useState("< More About Me />");
+  const [text] = useState("< MORE ABOUT ME />");
+
   return (
     <div className="landingpage-div">
-      <section id="section1">
-        <div className="landingpag-section1-topnav">
-          <div className="landingpage-topnav1-home">
-            <Link to="/">Tristan John Girao</Link>
+      <div className="landingpage-topnav-container">
+        <div className="landingpage-topnav">
+          <div>
+            <a href="/" style={{ fontWeight: 500 }}>
+              Tristan John Girao
+            </a>
           </div>
-          <div className="landingpage-topnav1-portfolio">
-            <Link to="/portfoliopage">My Portfolio</Link>
+          <div>
+            <a href="/portfoliopage">My Portfolio</a>
           </div>
         </div>
+      </div>
+      <section id="section1">
         <div className="landingpage-section1-bodydiv">
-          <div className="landingpage-myinfo">
-            <div className="myinfo-name">
-              <p>Tristan John P. Girao</p>
-            </div>
-            <div className="myinfo-aboutme">
+          <div className="landingpage-myinfo-container">
+            <div className="landingpage-myinfo">
+              <p className="myname">Tristan John P. Girao</p>
               <p>Eager to be a web and app developer</p>
               <p>Adaptive · Thinker · Team Player · Introvert ·</p>
               <p>A funny Person</p>
             </div>
           </div>
           <div className="landingpage-mylinks">
-            <div className="mylinks-fb"></div>
-            <div className="mylinks-twitter"></div>
-            <div className="mylinks-instagram"></div>
-            <div className="mylinks-github"></div>
-            <div className="mylinks-linkedin"></div>
+            <div
+              className="mylinks fb"
+              onClick={() =>
+                window.open("https://web.facebook.com/tristanjohn.girao")
+              }
+            ></div>
+            <div
+              className="mylinks twitter"
+              onClick={() => window.open("https://twitter.com/GiraoJ4nj4n")}
+            ></div>
+            <div
+              className="mylinks instagram"
+              onClick={() =>
+                window.open("https://www.instagram.com/j4nj4n6403/")
+              }
+            ></div>
+            <div
+              className="mylinks github"
+              onClick={() => window.open("https://github.com/torisutanjon")}
+            ></div>
+            <div
+              className="mylinks linkedin"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/tristan-john-girao-69521a201/"
+                )
+              }
+            ></div>
           </div>
         </div>
         <div className="landingpage-footer">
@@ -40,16 +66,6 @@ const LandingPage = () => {
         </div>
       </section>
       <section id="section2">
-        <div className="landingpage-section2-topnav">
-          <div className="landingpage-topnav2-home">
-            <p onClick={() => (window.location = "#section1")}>
-              Tristan John Girao
-            </p>
-          </div>
-          <div className="landingpage-topnav2-portfolio">
-            <Link to="/portfoliopage">My Portfolio</Link>
-          </div>
-        </div>
         <div className="landingpage-section2-bodydiv">
           <div className="more-about-me-div">{text}</div>
           <div className="more-about-me-content-div">
@@ -69,11 +85,34 @@ const LandingPage = () => {
             <p>You can reach me at :</p>
           </div>
           <div className="mid-div">
-            <div className="mylinks-fb"></div>
-            <div className="mylinks-twitter"></div>
-            <div className="mylinks-instagram"></div>
-            <div className="mylinks-github"></div>
-            <div className="mylinks-linkedin"></div>
+            <div
+              className="mylinks fb"
+              onClick={() =>
+                window.open("https://web.facebook.com/tristanjohn.girao")
+              }
+            ></div>
+            <div
+              className="mylinks twitter"
+              onClick={() => window.open("https://twitter.com/GiraoJ4nj4n")}
+            ></div>
+            <div
+              className="mylinks instagram"
+              onClick={() =>
+                window.open("https://www.instagram.com/j4nj4n6403/")
+              }
+            ></div>
+            <div
+              className="mylinks github"
+              onClick={() => window.open("https://github.com/torisutanjon")}
+            ></div>
+            <div
+              className="mylinks linkedin"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/tristan-john-girao-69521a201/"
+                )
+              }
+            ></div>
           </div>
           <div className="bottom-div">
             <p> Copyright &copy; Tristan John P. Girao 2021</p>

@@ -1,11 +1,234 @@
+@-moz-document url-prefix() {
+  .body {
+    float: left;
+    overflow-x: hidden;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 .landingpage-div {
   position: absolute;
-  height: 200vh;
-  width: 100%;
   top: 0;
   left: 0;
+  height: 200%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+}
+.landingpage-topnav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 10%;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landingpage-topnav {
+  position: relative;
+  top: 0;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.landingpage-topnav a {
+  font-size: 17.5px;
+  color: #5a5a5a;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.landingpage-topnav a:hover {
+  color: #cfcfcf;
+}
+section {
+  position: relative;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#section1 {
+  height: 80%;
+}
+.landingpage-section1-bodydiv {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.landingpage-myinfo-container {
+  position: relative;
+  height: 75%;
+  width: 50%;
+  background: rgb(38, 38, 38, 0.45);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landingpage-myinfo {
+  position: relative;
+  height: 50%;
+  width: 100%;
+  text-align: left;
+  color: white;
+  padding-left: 20%;
+}
+.landingpage-myinfo p {
+  font-size: 20px;
+}
+.landingpage-myinfo .myname {
+  font-weight: 500;
+  font-size: 35px;
+  letter-spacing: 0.25em;
+}
+
+.landingpage-mylinks {
+  position: relative;
+  width: 20%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.fb {
+  background: url("../Images//facebook-icon.png");
+}
+.twitter {
+  background: url("../Images//twitter-icon.png");
+}
+.instagram {
+  background: url("../Images//instagram-icon.png");
+}
+.github {
+  background: url("../Images//github-icon.png");
+}
+.linkedin {
+  background: url("../Images//linkedin-icon.png");
+}
+.mylinks {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.mylinks:hover {
+  box-shadow: 0 0 0 3px #ccc;
+}
+
+.landingpage-footer {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  background: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+.landingpage-footer p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* SECTION 2 OF THE PAGE */
+.landingpage-section2-bodydiv {
+  position: relative;
+  left: 0;
+  height: 80%;
+  width: 100%;
+  background: #0c0d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.more-about-me-div {
+  position: relative;
+  height: 10%;
+  width: 70%;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.more-about-me-content-div {
+  position: relative;
+  height: 30%;
+  width: 70%;
+  color: white;
+  font-size: 16px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 300%;
+}
+.landingpage-section2-footer {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landingpage-section2-footer .top-div {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landingpage-section2-footer .mid-div {
+  position: relative;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.landingpage-section2-footer .bottom-div {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
