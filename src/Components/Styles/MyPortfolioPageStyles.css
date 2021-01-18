@@ -1,0 +1,176 @@
+@-moz-document url-prefix() {
+  .body {
+    float: left;
+    overflow-x: hidden;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.portfoliopage-bodydiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Poppins, sans-serif;
+}
+
+.portfoliopage-topdiv-container {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  background: #383838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfoliopage-topdiv {
+  position: relative;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfoliopage-topdiv a {
+  font-size: 17.5px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.portfoliopage-topdiv a:hover {
+  color: #5a5a5a;
+}
+.portfoliopage-maindiv {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.my-top-projects-body-div,
+.technologies-i-use-body-div {
+  position: relative;
+  height: 90%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(80, 80, 80, 0.5);
+  border-radius: 5px;
+}
+
+.my-top-projects-top-div,
+.technologies-i-use-top-div {
+  position: relative;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-top-projects-top-div p,
+.technologies-i-use-top-div p {
+  color: white;
+  font-size: 25px;
+  font-weight: normal;
+}
+.my-top-projects-main-div,
+.technologies-i-use-main-div {
+  position: relative;
+  height: 90%;
+  width: 100%;
+
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+}
+.projectdiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-topdiv {
+  position: relative;
+  margin: auto;
+  height: 70%;
+  width: 70%;
+}
+.project-bottomdiv {
+  position: relative;
+  height: 15%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.project-bottomdiv p {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.technologies-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.technologies-topdiv {
+  position: relative;
+  height: 10%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.technologies-topdiv p {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.technologies-maindiv {
+  position: relative;
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.left-ul,
+.right-ul {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  text-align: left;
+}
+.whole-ul {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+}
+li {
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
