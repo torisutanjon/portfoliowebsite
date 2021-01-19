@@ -106,11 +106,16 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .project-topdiv {
   position: relative;
   margin: auto;
   height: 70%;
   width: 70%;
+}
+.project-topdiv:hover {
+  border: 2px solid white;
+  cursor: pointer;
 }
 .project-bottomdiv {
   position: relative;
@@ -124,6 +129,10 @@
   color: white;
   font-size: 15px;
   font-weight: 500;
+}
+.project-bottomdiv p:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 .technologies-div {
   position: relative;

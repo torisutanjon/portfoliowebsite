@@ -20,29 +20,67 @@ const PortfolioPage = () => {
           </div>
           <div className="my-top-projects-main-div">
             <div className="projectdiv div1">
-              <div className="project-topdiv"></div>
-              <div className="project-bottomdiv">
-                <p>Project 1</p>
+              <div
+                className="project-topdiv"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/torisutanjon/FirstComeFirstServeCPUAlgo"
+                  )
+                }
+              ></div>
+              <div
+                className="project-bottomdiv"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/torisutanjon/FirstComeFirstServeCPUAlgo"
+                  )
+                }
+              >
+                <p>First Come First Serve CPU Scheduling Algorithm</p>
               </div>
             </div>
             <div className="projectdiv div2">
-              <div className="project-topdiv"></div>
-              <div className="project-bottomdiv">
-                <p>Project 2</p>
+              <div
+                className="project-topdiv"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/torisutanjon/Shortest-Job-First-Pre-Emptive"
+                  )
+                }
+              ></div>
+              <div
+                className="project-bottomdiv"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/torisutanjon/Shortest-Job-First-Pre-Emptive"
+                  )
+                }
+              >
+                <p>Shortest Job First Pre-Emptive CPU Scheduling Algorithm</p>
               </div>
             </div>
             <div className="projectdiv div3">
-              <div className="project-topdiv"></div>
-              <div className="project-bottomdiv">
-                <p>Project 3</p>
+              <div
+                className="project-topdiv"
+                onClick={() =>
+                  window.open("https://github.com/torisutanjon/ecommerceapp")
+                }
+              ></div>
+              <div
+                className="project-bottomdiv"
+                onClick={() =>
+                  window.open("https://github.com/torisutanjon/ecommerceapp")
+                }
+              >
+                <p>E-Commerce Website Application (Unfinished Yet)</p>
               </div>
             </div>
-            <div className="projectdiv div4">
+            {/* <div className="projectdiv div4">
               <div className="project-topdiv"></div>
               <div className="project-bottomdiv">
                 <p>Project 4</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="technologies-i-use-body-div">
