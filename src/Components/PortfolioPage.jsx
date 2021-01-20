@@ -1,5 +1,8 @@
 import React from "react";
 import "./Styles/MyPortfolioPageStyles.css";
+import fcfsgif from "./Images/FCFS.gif";
+import sjfgif from "./Images/SJF-Pre-Emptive.gif";
+import ecommercegif from "./Images/ecommerce.gif";
 const PortfolioPage = () => {
   return (
     <div className="portfoliopage-bodydiv">
@@ -27,7 +30,9 @@ const PortfolioPage = () => {
                     "https://github.com/torisutanjon/FirstComeFirstServeCPUAlgo"
                   )
                 }
-              ></div>
+              >
+                <img src={fcfsgif} alt="FCFS Here" id="projectdivImage"></img>
+              </div>
               <div
                 className="project-bottomdiv"
                 onClick={() =>
@@ -47,7 +52,9 @@ const PortfolioPage = () => {
                     "https://github.com/torisutanjon/Shortest-Job-First-Pre-Emptive"
                   )
                 }
-              ></div>
+              >
+                <img src={sjfgif} alt="FCFS Here" id="projectdivImage"></img>
+              </div>
               <div
                 className="project-bottomdiv"
                 onClick={() =>
@@ -61,11 +68,17 @@ const PortfolioPage = () => {
             </div>
             <div className="projectdiv div3">
               <div
-                className="project-topdiv"
+                className="project-topdiv "
                 onClick={() =>
                   window.open("https://github.com/torisutanjon/ecommerceapp")
                 }
-              ></div>
+              >
+                <img
+                  src={ecommercegif}
+                  alt="FCFS Here"
+                  id="projectdivImage"
+                ></img>
+              </div>
               <div
                 className="project-bottomdiv"
                 onClick={() =>
