@@ -4,168 +4,203 @@
     overflow-x: hidden;
   }
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 .landingpage-div {
   position: absolute;
-  top: 0;
   left: 0;
+  top: 0;
   height: 200%;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  font-family: "Poppins", sans-serif;
+  background: none;
+  font-family: Poppins, sans-serif;
 }
 .landingpage-topnav-container {
   position: fixed;
   top: 0;
   left: 0;
-  display: block;
   height: 10%;
   width: 100%;
-  z-index: 999;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
 .landingpage-topnav {
   position: relative;
-  top: 0;
   height: 100%;
-  width: 70%;
+  width: 100%;
+  background: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.landingpage-topnav a {
-  font-size: 17.5px;
-  color: #5a5a5a;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.landingpage-topnav a:hover {
-  color: #cfcfcf;
-}
-section {
+.landingpage-topnav div {
   position: relative;
-  height: 80%;
-  width: 100%;
+  height: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#section1 {
-  height: 80%;
+
+.landingpage-topnav div a {
+  text-decoration: none;
 }
-.landingpage-section1-bodydiv {
+
+section {
   position: relative;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
-}
-.landingpage-myinfo-container {
-  position: relative;
-  height: 75%;
-  width: 50%;
-  background: rgb(38, 38, 38, 0.45);
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.landingpage-myinfo {
-  position: relative;
-  height: 50%;
-  width: 100%;
-  text-align: left;
-  color: white;
-  padding-left: 20%;
-}
-.landingpage-myinfo p {
-  font-size: 20px;
-}
-.landingpage-myinfo .myname {
-  font-weight: 500;
-  font-size: 35px;
-  letter-spacing: 0.25em;
 }
 
-.landingpage-mylinks {
+.landingpage-section1-bodydiv {
   position: relative;
-  width: 20%;
+  top: 10%;
   height: 80%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
+
+.landingpage-myinfo-container {
+  position: relative;
+  left: 5%;
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  line-height: 2;
+  color: white;
+}
+.mylinks__container {
+  position: relative;
+  right: 0;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.hidden-btn {
+  position: relative;
+  align-self: flex-start;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.landingpage-mylinks {
+  position: relative;
+  width: 70px;
+  height: 100%;
+  background: rgb(63, 63, 63, 0.5);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .fb {
-  background: url("../Images//facebook-icon.png");
+  background: url("../Images/facebook-icon.png");
 }
 .twitter {
-  background: url("../Images//twitter-icon.png");
+  background: url("../Images/twitter-icon.png");
 }
 .instagram {
-  background: url("../Images//instagram-icon.png");
+  background: url("../Images/instagram-icon.png");
 }
 .github {
-  background: url("../Images//github-icon.png");
+  background: url("../Images/github-icon.png");
 }
 .linkedin {
-  background: url("../Images//linkedin-icon.png");
+  background: url("../Images/linkedin-icon.png");
 }
 .mylinks {
   position: relative;
   height: 50px;
   width: 50px;
+  border: none;
+  outline: none;
   border-radius: 50%;
-  cursor: pointer;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.mylinks:hover {
-  box-shadow: 0 0 0 3px #ccc;
-}
-
 .landingpage-footer {
   position: relative;
+  top: 10%;
   height: 10%;
   width: 100%;
-  background: orange;
   display: flex;
-  justify-content: center;
   align-items: center;
-  transition: 0.3s;
+  justify-content: center;
 }
-.landingpage-footer p:hover {
-  cursor: pointer;
-  text-decoration: underline;
+.footer-learnmore {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-/* SECTION 2 OF THE PAGE */
+.footer-learnmore p {
+  color: black;
+  font-size: 18px;
+  word-spacing: 7.5px;
+  letter-spacing: 1.5px;
+}
+
+/* SECTION 2 DESIGN STARTS HERE */
+
 .landingpage-section2-bodydiv {
   position: relative;
+  top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #0c0d2d;
+}
+.aboutme__container {
+  position: relative;
+  top: 10%;
   height: 80%;
   width: 100%;
+  color: white;
   background: #0c0d2d;
   display: flex;
   flex-direction: column;
@@ -174,61 +209,151 @@ section {
 }
 .more-about-me-div {
   position: relative;
+  width: 100%;
   height: 10%;
-  width: 70%;
+  font-size: 20px;
   color: white;
-  font-size: 24px;
-  font-weight: 500;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
+  align-items: center;
+  padding-left: 10%;
 }
+
 .more-about-me-content-div {
   position: relative;
-  height: 30%;
-  width: 70%;
-  color: white;
-  font-size: 16px;
+  height: 90%;
+  width: 100%;
   text-align: justify;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  line-height: 300%;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 2.25;
+  padding: 5%;
 }
+
 .landingpage-section2-footer {
   position: relative;
-  width: 100%;
   height: 20%;
-  background: white;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  background: white;
 }
-.landingpage-section2-footer .top-div {
+.top-div {
   position: relative;
+  height: 25%;
   width: 100%;
-  height: 20%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-.landingpage-section2-footer .mid-div {
+.mid-div {
   position: relative;
-  width: 70%;
-  height: 60%;
+  height: 50%;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
-  align-items: center;
 }
-.landingpage-section2-footer .bottom-div {
+.footerlink {
   position: relative;
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bottom-div {
+  position: relative;
+  height: 25%;
   width: 100%;
-  height: 20%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) {
+  .more-about-me-div {
+    padding-left: 5%;
+    font-size: 25px;
+  }
+  .more-about-me-content-div {
+    padding-left: 5%;
+    margin-top: 5%;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .topnav__atag {
+    font-size: 22px;
+    color: rgb(70, 70, 70);
+    display: inline-block;
+    transition: 0.6s;
+  }
+  .topnav__atag:hover {
+    color: rgba(173, 173, 173, 0.85);
+  }
+  .landingpage-myinfo {
+    height: 100%;
+    width: 60%;
+    align-self: flex-start;
+    background: rgb(128, 128, 128, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .landingpage-myinfo p {
+    font-size: 20px;
+    align-self: flex-start;
+    margin: 0;
+    padding-left: 10%;
+  }
+  .landingpage-myinfo .myname {
+    font-size: 30px;
+    margin-bottom: 10%;
+  }
+  .footer-learnmore {
+    background: orange;
+  }
+  .footer-learnmore p {
+    color: black;
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.6s;
+  }
+  .footer-learnmore p:hover {
+    color: gray;
+  }
+  .landingpage-mylinks {
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    background: none;
+  }
+  .mylinks {
+    width: 75px;
+    height: 75px;
+  }
+  .more-about-me-div {
+    padding-top: 2%;
+    font-size: 30px;
+  }
+  .more-about-me-content-div {
+    font-size: 20px;
+    line-height: 3;
+  }
+  .top-div p {
+    font-size: 20px;
+  }
+  .footerlink {
+    height: 55px;
+    width: 55px;
+  }
 }
