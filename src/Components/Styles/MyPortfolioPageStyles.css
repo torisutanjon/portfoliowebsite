@@ -24,14 +24,18 @@
   justify-content: center;
   font-family: Poppins, sans-serif;
 }
+
 .portfoliopage-topdiv-container {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 7.5%;
   width: 100%;
   background: #383838;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 999;
 }
 
 .portfoliopage-topdiv {
